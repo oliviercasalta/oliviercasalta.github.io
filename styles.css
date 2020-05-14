@@ -53,6 +53,7 @@ p{
   text-justify: inter-word;
   max-width: 800px;
   font-size: medium;
+  margin:auto;
 }
 
 .video {
