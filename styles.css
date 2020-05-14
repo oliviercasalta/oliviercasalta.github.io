@@ -5,6 +5,7 @@ body
   text-align: justify;
   text-justify: inter-word;
   font-size: 14px;
+  vertical-align: middle;
 }
 
 .navbar-nav {
