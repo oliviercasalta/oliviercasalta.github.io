@@ -47,13 +47,15 @@ h3, h4 {
   font-weight: 1;
 }
 
-p{
-  vertical-align: middle;
+h2 {
   text-align: justify;
+  font-size: medium;
   text-justify: inter-word;
   max-width: 800px;
-  font-size: medium;
-  margin:auto;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px;
 }
 
 .video {
