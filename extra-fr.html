@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <title>Olivier - Extra</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="icon" href="img/rocket.png" type="image/png" sizes="16x16">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166522634-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-166522634-1');
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/fba1afbbed.js" crossorigin="anonymous"></script>
+        
+        <style>
+
+        body{
+        margin-top:5rem;
+        background-color: rgb(236, 236, 236);
+        color:rgb(92, 92, 92);
+        }
+
+        h2, h3, h4, p, li, table{
+        text-align: justify;
+        text-justify: inter-word;
+        max-width: 800px;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        }
+
+        h1, h3{
+        text-align: center; 
+        }
+
+        .carouselfix{
+        color:white;
+        text-align: center;
+        font-size:xx-large;
+        font-style: italic;
+        border: 2px;
+        }
+
+        .carousel1, .carousel2, .carousel3, .carousel4{
+        display: flex;
+        height:180px;
+        align-items:center;
+        justify-content:center;
+        position: relative;
+        text-align: center;
+        color: white;
+        }
+
+        .left {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        }
+
+        .right {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        }
+
+        .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        .header{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color:rgb(236, 236, 236);
+        color:rgb(92, 92, 92);
+        }
+        
+        .footer {
+        width: 100%;
+        background-color:  rgb(53, 58, 63);
+        color:white;
+        }
+
+        #footy {
+        list-style: none;
+        width: 100%;
+        height: 70px;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        }
+
+        #footy > li {
+        display: inline-block;
+        text-align: center;
+        width: 33%;
+        height: 100%;
+        }
+
+        .scrollnotspy{
+        margin: auto;
+        max-width: 860px;
+        color:grey; 
+        height: auto;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <div class="header">
+            <br><h1><i class="fas fa-rocket"></i> Extra</h1><br>
+        </div>
+
+        <!-- Navabar -->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/france.png" style="width: 20px;" alt="no">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="extra-en.html"><img src="img/united-kingdom.png" style="width: 20px;" alt="no">&emsp;English</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience-fr.html"><i class="fas fa-user-cog"></i> Expérience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education-fr.html"><i class="fas fa-user-graduate"></i> Education</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="extra-fr.html"><i class="fas fa-rocket"></i> Extra</a>
+                    </li>
+                    <span></span>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Carousel -->
+        <div class="carouselfix">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+            
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#section1">
+                            <div class="carousel1"><img src="img/buck.jpg" style="width: 100%;" alt="no">
+                                <div class="left"><i class="fas fa-mountain"></i> ESCALADE</div>
+                                <div class="right"> RANDONEE <i class="fas fa-hiking"></i></div>
+                            </div>
+                        </a>    
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#section2">
+                            <div class="carousel2"><img src="img/blue.jpg" style="width: 100%;" alt="no">
+                                <div class="left"><i class="fas fa-water"></i> APNEE</div>
+                                <div class="right"> PECHE SOUS-MARINE<i class="fas fa-ship"></i></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#section3">
+                            <div class="carousel3"><img src="img/guitar.jpeg" style="width: 100%;" alt="no">
+                                <div class="centered">
+                                    <i class="fas fa-music"></i> &emsp;MUSIQUE&emsp;<i class="fas fa-play-circle"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#section4">
+                            <div class="carousel4"><img src="img/summit.jpeg" style="width: 100%;" alt="no">
+                                <div class="left"><i class="fas fa-biking"></i> VELO</div>
+                                <div class="right"> COURSE A PIED <i class="fas fa-running"></i></div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Scrollnotspy -->
+        <div class="scrollnotspy">
+            <div id="section1" class="bg-light"> 
+                <br>
+                <h3><i class="fas fa-hiking"></i> Randonnée + escalade <i class="fas fa-mountain"></i></h3>
+                <br>
+                <p><img src="img/mueller.jpg" style="width: 100%;" alt="no"></p>
+                <h4><i class="fas fa-image"></i> Randonnée @ Mt Ollivier, NZ</h4><br>
+                <p><img src="img/buck.jpg" style="width: 100%;" alt="no"></p>
+                <h4><i class="fas fa-image"></i> Escalade @ Buck Rock, NZ</h4><br>
+                <p><img src="img/climbing.jpg" style="width: 100%;" alt="no"></p>
+                <h4><i class="fas fa-image"></i> Escalade @ Froggatt Edge, NZ</h4><br>
+                <br>
+            </div>
+            <br>
+            <div id="section2" class="bg-light"> 
+                <br>
+                <h3><i class="fas fa-water"></i> Apnée + pêche sous-marine <i class="fas fa-ship"></i></h3>
+                <br>
+                <p><img src="img/fishing.jpg" style="width: 100%;" alt="no"></p>
+                <h4><i class="fas fa-image"></i> pêche sous-marine @ Spirit Bay, NZ</h4><br>
+                <p><img src="img/crays.jpg" style="width: 100%;" alt="no"></p>
+                <h4><i class="fas fa-image"></i> pêche sous-marine @ Mahia Peninsula, NZ</h4><br>
+                <p><img src="img/freediving.jpg" style="width: 100%;" alt="no"></p>
+                <h4><i class="fas fa-image"></i> Apnée @ Blenheim, NZ</h4><br>
+            </div>
+            <br>
+            <div id="section3" class="bg-light"> 
+                <br>
+                <h3><i class="fas fa-music"></i> Musique <i class="fas fa-play-circle"></i></h3>
+                <br>
+                <p><video style="width: 100%;" controls><source src="vdo/Montagne.m4v">Your browser does not support the video tag.</video></p>
+                <h4><i class="fas fa-film"></i> De la musique @ la maison, NZ</h4><br>
+                <p><video style="width: 100%;" controls><source src="vdo/PaganiniShorter.m4v">Your browser does not support the video tag.</video></p>
+                    <h4><i class="fas fa-film"></i> Encore de la musique!!<i class="fas fa-headphones"></i> @ la maison, NZ</h4><br>
+            </div>
+            <br>
+            <div id="section4" class="bg-light"> 
+                <br>
+                <h3><i class="fas fa-biking"></i> Tous les jours à Christchurch <i class="fas fa-running"></i></h3>
+                <br>
+                <p><video style="width: 100%;" controls><source src="vdo/Bike.mp4">Your browser does not support the video tag.</video></p>
+                <h4><i class="fas fa-film"></i> VTT @ Christchurch, NZ</h4><br>
+                <p><img src="img/running.jpg" style="width: 100%;" alt="no"></p>
+                <h4><i class="fas fa-image"></i> course à pied @ Rapaki, NZ</h4><br>
+                <p><img src="img/walking.jpeg" style="width: 100%;" alt="no"></p>
+                <h4><i class="fas fa-image"></i> farniente @ Sumner, NZ</h4><br>
+            </div>
+        </div>
+
+        <h1><i class="fas fa-chess-bishop"></i></h1>
+
+        <!-- Footer -->
+        <div class="footer">
+            <ul id="footy">
+                <li><br><i class="fas fa-download"></i><a style="color: white" href="pdf/Olivier_Casalta_CV_fr.pdf" download> CV</a></li>
+                <li><br><i class="fas fa-envelope"></i><a style="color: white" href = "mailto:olivier.casalta@gmail.com"> e-mail</a></li>
+                <li><br><i class="fas fa-external-link-alt"></i><a style="color: white" href="https://www.linkedin.com/in/olivier-casalta-14753941"> LinkedIn</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>

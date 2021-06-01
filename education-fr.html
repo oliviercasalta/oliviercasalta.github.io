@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <title>Olivier - Education</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="icon" href="img/rocket.png" type="image/png" sizes="16x16">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166522634-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-166522634-1');
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/fba1afbbed.js" crossorigin="anonymous"></script>
+        
+        <style>
+
+        body{
+            margin-top:5rem;
+            background-color: rgb(236, 236, 236);
+            color:rgb(92, 92, 92);
+        }
+
+        h2, h3, h4, p, li, table{
+        text-align: justify;
+        text-justify: inter-word;
+        max-width: 800px;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        }
+
+        h1{
+        text-align: center; 
+        }
+
+        .carouselfix{
+        color:white;
+        text-align: center;
+        font-size:xx-large;
+        font-style: italic;
+        border: 2px;
+        }
+
+        .carousel1, .carousel2, .carousel3{
+        display: flex;
+        height:180px;
+        align-items:center;
+        justify-content:center;
+        position: relative;
+        text-align: center;
+        color: white;
+        }
+
+        .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        .header{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color:rgb(236, 236, 236);
+        color:rgb(92, 92, 92);
+        }
+        
+        .footer {
+        width: 100%;
+        background-color:  rgb(53, 58, 63);
+        color:white;
+        }
+
+        #footy {
+        list-style: none;
+        width: 100%;
+        height: 70px;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        }
+
+        #footy > li {
+        display: inline-block;
+        text-align: center;
+        width: 33%;
+        height: 100%;
+        }
+
+        .scrollnotspy{
+          margin: auto;
+          max-width: 860px;
+          color:grey; 
+          height: auto;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <div class="header">
+            <br><h1><i class="fas fa-user-graduate"></i> Education</h1><br>
+        </div>
+
+        <!-- Navabar -->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/france.png" style="width: 20px;" alt="no">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="education-en.html"><img src="img/united-kingdom.png" style="width: 20px;" alt="no">&emsp;English</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience-fr.html"><i class="fas fa-user-cog"></i> Expérience</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="education-fr.html"><i class="fas fa-user-graduate"></i> Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extra-fr.html"><i class="fas fa-rocket"></i> Extra</a>
+                    </li>
+                    <span></span>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Carousel -->
+        <div class="carouselfix">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+            
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#section1">
+                            <div class="carousel1"><img src="img/robot.jpeg" style="width: 100%;" alt="no">
+                                <div class="centered">
+                                    <i class="fas fas fa-robot"></i> Ingénieur en mécatronique <i class="fas fa-brain"></i>
+                                </div>
+                            </div>
+                        </a>    
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#section2">
+                            <div class="carousel2"><img src="img/physics.jpeg" style="width: 100%;" alt="no">
+                                <div class="centered">
+                                    <i class="fas fa-flask"></i> &emsp;Mesures physiques&emsp; <i class="fas fa-temperature-high"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#section3">
+                            <div class="carousel3"><img src="img/computer.jpeg" style="width: 100%;" alt="no">
+                                <div class="centered">
+                                    <i class="fas fa-file-code"></i> &emsp;Informatique&emsp;<i class="fas fa-code-branch"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scrollnotspy -->
+        <div class="scrollnotspy">
+            <div id="section1" class="bg-light"> 
+                <br>
+                
+                <table style="width:100%; background-color: rgb(236, 236, 236);">
+                    <colgroup>
+                        <col span="1" style="width: 5%;">
+                        <col span="1" style="width: 60%;">
+                        <col span="1" style="width: 35%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><h3><i class="fas fa-school"></i></h3></td>
+                            <td><h3>ISTY UVSQ</h3></td>
+                            <td rowspan="4"><img src="img/isty.png" style="max-height: 80px; width: 100%;" alt="no"></td>
+
+                        </tr>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><h4><i class="fas fa-user-graduate"></i></h4></td>
+                            <td><h4>Diplôme d'ingénieur en mécatronique</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><p><i class="fas fa-map-pin"></i></p></td>
+                            <td><p>Paris, France</p></td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><p><i class="fas fa-calendar-alt"></i></p></td>
+                            <td><p>2005-2009</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+
+                <h3>Enseignement Scientifique</h3><p>
+                    - Mathématiques: statistiques et probabilités, algèbre et calcul matriciel<br>
+                    - Physique: électromagnétisme, thermodynamique<br></p>
+
+                <h3>Sciences de l'ingénieur</h3><p>
+                    - Automatique: traitement du signal, automatique continu<br>
+                    - Génie électronique et électrique<br>
+                    - Informatique<br>
+                    - Matériaux</p>
+
+                <h3>Sciences et techniques pour la mécatronique</h3><p>
+                    - Génie mécanique<br>
+                    - Informatique industrielle et CEM<br>
+                    - Robotique<br>
+                    - Outils logiciels: Matlab, outil de supervision: Labview<br>
+                    - CAO mécanique: CATIA, ADAMS<br>
+                    - CAO électronique: Protel</p>
+
+                <h3>Sciences humaines et managériales</h3><p>
+                    - Gestion de la qualité<br>
+                    - Etude de l'organisation et de la gestion de l'entreprise<br>
+                    - Gestion des ressources humaines<br>
+                    - Etude de langue: anglais<br></p>
+                <br>
+                <p><i class="fas fa-external-link-alt"> </i><a style="color: rgb(92, 92, 92);" href="http://www.isty.uvsq.fr/cycle-ingenieur-mecatronique"> En savoir plus sur l'ISTY</a></p>
+                <br>
+            </div>
+            <br>
+
+            <div id="section2" class="bg-light">
+                <br>
+                <table style="width:100%; background-color: rgb(236, 236, 236);">
+                    <colgroup>
+                        <col span="1" style="width: 5%;">
+                        <col span="1" style="width: 60%;">
+                        <col span="1" style="width: 35%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><h3><i class="fas fa-school"></i></h3></td>
+                            <td><h3>UNIVERSTITE DE MONTPELLIER</h3></td>
+                            <td rowspan="4"><img src="img/iut.png" style="max-height: 80px; width: 100%;" alt="no"></td>
+
+                        </tr>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><h4><i class="fas fa-user-graduate"></i></h4></td>
+                            <td><h4>Diplôme de technicien mesures physiques</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><p><i class="fas fa-map-pin"></i></p></td>
+                            <td><p>Montpellier, France</p></td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><p><i class="fas fa-calendar-alt"></i></p></td>
+                            <td><p>2003-2005</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><p>
+                    <h3>Chaîne de mesure</h3><p>
+                        Savoir mettre en place et configurer une chaîne de mesure, du choix du capteur à l'affichage des données sur un ordinateur, en passant par le conditionnement, l'acquisition et le traitement du signal envoyé par le capteur.<br></p>
+                    <h3>Approche métrologique</h3><p>
+                        Savoir adopter une approche métrologique : protocole de mesure, calculs d'incertitudes, vérification de l'exactitude et de la fiabilité d'un parc d'instruments de mesure, application des normes en vigueur.<br></p>
+                    <h3>Résultat de la mesure</h3><p>
+                        Savoir interpréter le résultat d'une campagne de mesures dans tous les domaines des sciences physiques (mécanique, optique, thermique, matériaux, acoustique, chimie, etc.).<br></p>
+                    <h3>Rapports</h3><p>
+                        Savoir rédiger des rapports de test et communiquer au sein de l'entreprise.<br></p>
+                <br>
+                <p><i class="fas fa-external-link-alt"> </i><a style="color: rgb(92, 92, 92);" href="https://iut-montpellier-sete.edu.umontpellier.fr/dut-mesures-physiques"> En savoir plus sur l'UNIVERSITE DE MONTPELLIER </a></p>
+                <br>
+            </div>  
+            <br>
+
+            <div id="section3" class="bg-light">
+                <br>
+                <table style="width:100%; background-color: rgb(236, 236, 236);">
+                    <colgroup>
+                        <col span="1" style="width: 5%;">
+                        <col span="1" style="width: 60%;">
+                        <col span="1" style="width: 35%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><h3><i class="fas fa-school"></i></h3></td>
+                            <td><h3>UNIVERSITE D'HARVARD</h3></td>
+                            <td rowspan="4"><img src="img/harvard.png" style="max-height: 60px; width: 100%;" alt="no"></td>
+
+                        </tr>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><h4><i class="fas fa-user-graduate"></i></h4></td>
+                            <td><h4>Certificat d'informatique CS50x</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><p><i class="fas fa-map-pin"></i></p></td>
+                            <td><p>en ligne</p></td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex; justify-content: center;"><p><i class="fas fa-calendar-alt"></i></p></td>
+                            <td><p>2020</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                    <h2>CS50x</h2><p>
+                        CS50x est une introduction au monde de l'informatique et de l'art de la programmation. Ce cours apprend à penser de manière algorithmique et à résoudre efficacement les problèmes. Les sujets abordés incluent l'abstraction, les algorithmes, les structures de données, l'encapsulation, la gestion des ressources, la sécurité et l'ingénierie logicielle.<br>
+                        Les langages incluent C, Python et SQL ainsi que d'autres choix parmi: HTML, CSS et JavaScript pour le développement Web Ensembles de problèmes inspirés des arts, des sciences humaines, des sciences sociales et des sciences.</p>
+                <br>
+                <p><i class="fas fa-external-link-alt"> </i><a style="color: rgb(92, 92, 92);" href="https://www.edx.org/course/cs50s-introduction-to-computer-science"> En savoir plus sur CS50x</a></p>
+                <br>
+            </div> 
+        </div>
+
+        <h1><i class="fas fa-chess-knight"></i></h1>
+
+        <!-- Footer -->
+        <div class="footer">
+            <ul id="footy">
+                <li><br><i class="fas fa-download"></i><a style="color: white" href="pdf/Olivier_Casalta_CV_fr.pdf" download> CV</a></li>
+                <li><br><i class="fas fa-envelope"></i><a style="color: white" href = "mailto:olivier.casalta@gmail.com"> e-mail</a></li>
+                <li><br><i class="fas fa-external-link-alt"></i><a style="color: white" href="https://www.linkedin.com/in/olivier-casalta-14753941"> LinkedIn</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>
